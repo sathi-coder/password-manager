@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Password Manager</h1>
+        
+        <div class="form-container">
+            <h2>Add/Update Password</h2>
+            <input type="text" id="service" placeholder="Full name" required>
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <input type="password" id="master-password" placeholder="Enter a word you remember in case of forgotting password" required>
+            <button id="save-password-btn">Save Password</button>
+        </div>
+
+        <div class="form-container">
+            <h2>Retrieve Password</h2>
+            <input type="text" id="retrieve-service" placeholder="Full name" required>
+            <input type="password" id="retrieve-master-password" placeholder="Enter the keyword to retrieve passsord" required>
+            <button id="retrieve-password-btn">Retrieve Password</button>
+        </div>
+
+        <div class="form-container">
+            <h2>Delete Password</h2>
+            <input type="text" id="delete-service" placeholder="Full name" required>
+            <button id="delete-password-btn">Delete Password</button>
+        </div>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="backend.js"></script>
+</body>
+</html>
